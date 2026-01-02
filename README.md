@@ -39,9 +39,7 @@ This project demonstrates the implementation of Software-Defined Networking (SDN
 - Python 3.9
 - Open vSwitch (OVS)
 
-## Objectives
-
-### Primary Objectives
+### Objectives
 
 1. Design and implement an SDN-based fitness center network topology
 2. Develop a Ryu controller with QoS flow management capabilities
@@ -52,12 +50,6 @@ This project demonstrates the implementation of Software-Defined Networking (SDN
    - Normal client traffic (regular members)
 5. Develop a real-time monitoring dashboard
 6. Generate publication-quality analysis and visualizations
-
-### Secondary Objectives
-
-1. Demonstrate statistical significance of QoS improvements
-2. Create comprehensive documentation for reproducibility
-3. Build modular, extensible code architecture
 
 ## System Architecture
 
