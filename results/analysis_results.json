@@ -1,0 +1,167 @@
+{
+  "qos": {
+    "1": {
+      "client_name": "Client1",
+      "is_priority": "True",
+      "packet_count": 545,
+      "latency": {
+        "mean": 2.505018348623853,
+        "std": 0.8781637486913533,
+        "min": 0.1,
+        "max": 4.969,
+        "median": 2.429,
+        "p95": 3.9761999999999986,
+        "p99": 4.581999999999998
+      },
+      "emergency_count": "5"
+    },
+    "2": {
+      "client_name": "Client2",
+      "is_priority": "False",
+      "packet_count": 544,
+      "latency": {
+        "mean": 4.959463235294117,
+        "std": 1.6562665938650751,
+        "min": 0.441,
+        "max": 9.4,
+        "median": 4.932,
+        "p95": 7.780950000000001,
+        "p99": 8.420260000000006
+      },
+      "emergency_count": "4"
+    },
+    "3": {
+      "client_name": "Client3",
+      "is_priority": "False",
+      "packet_count": 544,
+      "latency": {
+        "mean": 4.983049632352941,
+        "std": 1.5768696696857412,
+        "min": 0.91,
+        "max": 9.628,
+        "median": 5.0600000000000005,
+        "p95": 7.464250000000001,
+        "p99": 8.498490000000002
+      },
+      "emergency_count": "4"
+    },
+    "4": {
+      "client_name": "Client4",
+      "is_priority": "False",
+      "packet_count": 543,
+      "latency": {
+        "mean": 4.982977900552486,
+        "std": 1.5105754565207314,
+        "min": 1.008,
+        "max": 9.57,
+        "median": 5.04,
+        "p95": 7.5119,
+        "p99": 8.25792000000001
+      },
+      "emergency_count": "3"
+    },
+    "aggregate": {
+      "priority": {
+        "mean": 2.505018348623853,
+        "std": 0.8781637486913533,
+        "median": 2.429
+      },
+      "normal": {
+        "mean": 4.975158798283261,
+        "std": 1.5814694917371128,
+        "median": 5.015
+      }
+    },
+    "statistical_test": {
+      "test": "Mann-Whitney U",
+      "null_hypothesis": "Priority latency >= Normal latency",
+      "statistic": 80094.0,
+      "p_value": 2.410790273434961e-181,
+      "significant": "True"
+    }
+  },
+  "priority": {
+    "priority_packets": 545,
+    "normal_packets": 1631,
+    "priority_ratio": 0.25045955882352944,
+    "latency_improvement": {
+      "absolute_ms": 2.470140449659408,
+      "percentage": 49.64947954046733
+    },
+    "per_port": {
+      "5001": {
+        "priority_mean": 2.568016666666667,
+        "normal_mean": 4.993646296296297,
+        "priority_count": 180,
+        "normal_count": 540
+      },
+      "5002": {
+        "priority_mean": 2.4515888888888884,
+        "normal_mean": 5.087118518518518,
+        "priority_count": 180,
+        "normal_count": 540
+      },
+      "5003": {
+        "priority_mean": 2.5248166666666667,
+        "normal_mean": 4.916427777777778,
+        "priority_count": 180,
+        "normal_count": 540
+      },
+      "5004": {
+        "priority_mean": 1.4478000000000002,
+        "normal_mean": 1.4545454545454546,
+        "priority_count": 5,
+        "normal_count": 11
+      }
+    }
+  },
+  "emergency": {
+    "total_emergencies": 16,
+    "emergency_rate": 0.007352941176470588,
+    "emergency_latency": {
+      "mean": 1.4524374999999998,
+      "std": 0.4358813246362669,
+      "max": 2.383,
+      "p95": 2.0620000000000003
+    },
+    "heart_rate_during_emergency": {
+      "mean": 195.0,
+      "max": "210",
+      "min": "181"
+    },
+    "per_client": {
+      "('latency_ms', 'mean')": {
+        "1": 1.45,
+        "2": 1.77,
+        "3": 1.09,
+        "4": 1.53
+      },
+      "('latency_ms', 'count')": {
+        "1": 5,
+        "2": 4,
+        "3": 4,
+        "4": 3
+      },
+      "('heart_rate', 'max')": {
+        "1": 205,
+        "2": 210,
+        "3": 198,
+        "4": 210
+      }
+    }
+  },
+  "throughput": {
+    "mean_pps": 12.088888888888889,
+    "max_pps": "13",
+    "min_pps": "12",
+    "std_pps": 0.2853771177182822,
+    "priority_throughput": {
+      "mean_pps": 3.0277777777777777,
+      "max_pps": "4"
+    },
+    "normal_throughput": {
+      "mean_pps": 9.061111111111112,
+      "max_pps": "10"
+    }
+  }
+}

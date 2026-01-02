@@ -1,0 +1,74 @@
+======================================================================
+SDN FITNESS CENTER - COMPREHENSIVE ANALYSIS REPORT
+======================================================================
+
+Generated: 2026-01-02 05:49:41
+Data File: /home/claude/sdn_fitness_center/data/fitness_data_20260102_054928.csv
+Total Records: 2176
+
+----------------------------------------------------------------------
+1. QoS METRICS ANALYSIS
+----------------------------------------------------------------------
+
+Aggregate Latency Statistics:
+  Priority Traffic:
+    Mean: 2.51 ms
+    Std: 0.88 ms
+  Normal Traffic:
+    Mean: 4.98 ms
+    Std: 1.58 ms
+
+Statistical Test (Mann-Whitney U):
+  Null Hypothesis: Priority latency >= Normal latency
+  p-value: 0.000000
+  Significant (α=0.05): Yes
+
+----------------------------------------------------------------------
+2. PRIORITY TRAFFIC ANALYSIS
+----------------------------------------------------------------------
+
+Priority Packets: 545
+Normal Packets: 1631
+
+Latency Improvement:
+  Absolute: 2.47 ms
+  Percentage: 49.65%
+
+----------------------------------------------------------------------
+3. EMERGENCY RESPONSE ANALYSIS
+----------------------------------------------------------------------
+
+Total Emergency Events: 16
+Emergency Rate: 0.74%
+
+Emergency Response Latency:
+  Mean: 1.45 ms
+  Max: 2.38 ms
+  P95: 2.06 ms
+
+----------------------------------------------------------------------
+4. THROUGHPUT ANALYSIS
+----------------------------------------------------------------------
+
+Mean Packets/Second: 12.09
+Max Packets/Second: 13.00
+Std Packets/Second: 0.29
+
+======================================================================
+CONCLUSIONS
+======================================================================
+
+This analysis demonstrates the effectiveness of SDN-based QoS
+management in a fitness center IoT environment. Key findings:
+
+1. Priority traffic (injury recovery client) achieved
+   49.6% lower latency than normal traffic.
+
+2. The latency difference is statistically significant
+   (p = 0.000000), confirming
+   the effectiveness of SDN QoS policies.
+
+3. The SDN controller successfully prioritized health-critical
+   traffic, demonstrating its viability for healthcare IoT applications.
+
+======================================================================
