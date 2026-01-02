@@ -49,7 +49,6 @@ This project demonstrates the implementation of Software-Defined Networking (SDN
    - Priority client traffic (injury recovery)
    - Normal client traffic (regular members)
 5. Develop a real-time monitoring dashboard
-6. Generate publication-quality analysis and visualizations
 
 ## System Architecture
 
@@ -110,9 +109,9 @@ This project demonstrates the implementation of Software-Defined Networking (SDN
 | Aggregation → Dashboard | 1000 Mbps | 1 ms | High-speed server link |
 
 
-## 6. Technical Implementation
+## Technical Implementation
 
-### 6.1 Component Overview
+### Component Overview
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
